@@ -1,0 +1,88 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 0, 187, 1);
+}
+
+footer {
+  color: rgba(39, 33, 66, 0.4);
+  text-align: center;
+  border-top: 1px solid rgba(39, 33, 66, 0.05);
+  padding-top: 30px;
+}
+
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+.search-input {
+  background-color: #f9f7fe;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  width: 20%;
+  border-radius: 6px;
+}
+
+.todays-weather {
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 1.5;
+}
+
+.todays-weather-details {
+  font-weight: bolder;
+  color: rgba(255, 0, 187, 1);
+}
+.todays-weather-status {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: -120px;
+  font-size: 40px;
+}
+.todays-temperature {
+  font-size: 80px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+.todays-temperature-celsius {
+  font-size: 30px;
+  position: relative;
+  top: 12px;
+}
+
+.todays-weather-symbol {
+  position: relative;
+  font-size: 45px;
+  top: 22px;
+}
