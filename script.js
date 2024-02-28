@@ -10,7 +10,10 @@ function updateWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+  let currentIcon = `<img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png">`;
 
+  iconElement.innerHTML = currentIcon;
   windElement.innerHTML = `${Math.round(currentWind)} km/h`;
   descriptionElement.innerHTML = currentDescription;
   humidityElement.innerHTML = `${currentHumidity}%`;
