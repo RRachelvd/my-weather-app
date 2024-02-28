@@ -46,6 +46,7 @@ header {
   width: 20%;
   border-radius: 6px;
   transition: all 150ms ease-in-out;
+  position: relative;
 }
 
 .search-button:hover {
