@@ -22,8 +22,7 @@ a {
 }
 
 header {
-  border-bottom: 1px solid #f9f7fe;
-  padding: 0 0 30px 0;
+  padding: 0 0 25px 0;
 }
 
 .search-input {
@@ -100,11 +99,11 @@ h1 {
 }
 
 main {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
+  border-top: 1px solid #efeef1b6;
   color: rgba(26, 21, 44, 0.6);
   text-align: center;
   padding-top: 30px;
