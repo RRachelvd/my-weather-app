@@ -83,6 +83,10 @@ h1 {
   font-size: 28px;
 }
 
+main {
+  margin-bottom: 35px;
+}
+
 footer {
   border-top: 1px solid #f9f7fe;
   color: rgba(39, 33, 66, 0.4);
