@@ -42,6 +42,12 @@ header {
   padding: 18px;
   width: 20%;
   border-radius: 6px;
+  transition: all 150ms ease-in-out;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: #cc668a;
 }
 
 h1 {
