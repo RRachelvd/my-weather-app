@@ -13,12 +13,13 @@
   <body>
     <div class="weather-app-container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             required
             placeholder="Search for a city..."
             class="search-input"
+            id="search-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
@@ -26,7 +27,7 @@
       <main>
         <div class="weather-app">
           <div>
-            <h1>Leeuwarden</h1>
+            <h1 id="city">Leeuwarden</h1>
 
             <p class="todays-weather">
               Wednesday 12:39, Overcast clouds <br />Humidity:
