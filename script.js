@@ -17,6 +17,8 @@ function updateWeather(response) {
   temperatureElement.innerHTML = Math.round(currentTemperature);
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
+
+  console.log(response.data);
 }
 
 function formatDate(date) {
