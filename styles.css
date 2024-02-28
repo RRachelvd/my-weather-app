@@ -13,7 +13,10 @@ a {
   background: white;
   max-width: 640px;
   margin: 60px auto;
-  padding: 45px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-radius: 10px;
   box-shadow: 15px 40px 80px rgba(65, 50, 100, 0.35);
 }
@@ -54,6 +57,10 @@ h1 {
   font-weight: 800;
   font-size: 40px;
   color: #513252;
+}
+
+.weather-info-left {
+  margin-left: 10px;
 }
 
 .todays-weather {
