@@ -102,6 +102,28 @@ main {
   margin-bottom: 70px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+  color: rgba(26, 21, 44, 0.6);
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.weather-forecast-temperature-min {
+  color: rgba(26, 21, 44, 0.35);
+}
+.weather-forecast-temperature-max {
+  color: rgba(26, 21, 44, 0.6);
+}
+
 footer {
   border-top: 1px solid #efeef1b6;
   color: rgba(26, 21, 44, 0.6);
