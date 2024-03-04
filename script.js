@@ -62,7 +62,32 @@ function searchSumbit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+<div class="row">
+  <div class="weather-forecast-day">${day}</div>
+  <div class="weather-forecast-icon">⛅</div>
+  <div class="weather-forecast-temperature">
+     <span class="weather-forecast-temperature-max">18° </span>
+     <span class="weather-forecast-temperature-min">12°</span>
+   </div>
+</div>
+    `;
+  });
+
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHtml;
+}
+
 let searchInput = document.querySelector("#search-form");
 searchInput.addEventListener("submit", searchSumbit);
 
 searchCity("Leeuwarden");
+
+displayForecast();
