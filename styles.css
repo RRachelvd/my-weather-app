@@ -110,9 +110,10 @@ main {
 }
 
 .weather-forecast-day {
+  font-weight: bold;
+  color: #7a4069;
   font-size: 16px;
   margin-bottom: 5px;
-  color: rgba(26, 21, 44, 0.6);
 }
 
 .weather-forecast-temperature {
@@ -121,10 +122,11 @@ main {
 }
 
 .weather-forecast-temperature-min {
-  color: rgba(26, 21, 44, 0.35);
+  color: rgba(26, 21, 44, 0.4);
 }
 .weather-forecast-temperature-max {
   color: rgba(26, 21, 44, 0.6);
+  font-weight: 450;
 }
 
 footer {
