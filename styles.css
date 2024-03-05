@@ -12,7 +12,7 @@ a {
 .weather-app-container {
   background: white;
   max-width: 660px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding-right: 45px;
   padding-left: 45px;
   padding-top: 40px;
@@ -22,7 +22,7 @@ a {
 }
 
 header {
-  padding: 0 0 25px 0;
+  padding: 0 0 20px 0;
 }
 
 .search-input {
@@ -59,7 +59,7 @@ h1 {
 }
 
 .weather-info-left {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .todays-weather {
@@ -79,6 +79,7 @@ h1 {
 .weather-app-temperature-container {
   display: flex;
   margin-right: 18px;
+  margin-top: 6px;
 }
 
 .weather-app-icon {
@@ -124,7 +125,7 @@ main {
 }
 
 .weather-forecast-temperature {
-  font-size: 14px;
+  font-size: 14.5px;
   margin-top: 12px;
   text-align: center;
   display: flex;
@@ -145,6 +146,6 @@ footer {
   border-top: 1px solid #efeef1b6;
   color: rgba(26, 21, 44, 0.6);
   text-align: center;
-  padding-top: 30px;
+  padding-top: 32px;
   font-size: 14px;
 }
