@@ -21,6 +21,8 @@ function updateWeather(response) {
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
 
+  getForecast(response.data.city);
+
   console.log(response.data);
 }
 
@@ -62,23 +64,44 @@ function searchSumbit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
-  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]; // I changed this array to start the week with Monday instead of Sunday. I'm located in the Netherlands and my device otherwise repeated todays data in the forecast.
+  return days[date.getDay()];
+}
+
+function getForecast(city) {
+  let apiKey = "0c98c0be68f4tba31fe26f898obb603d";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastHtml = "";
 
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `
 <div class="row">
-  <div class="weather-forecast-day">${day}</div>
-  <div class="weather-forecast-icon">⛅</div>
+  <div class="weather-forecast-day">${formatDay(day.time)}</div>
+  <div> <img src="${
+    day.condition.icon_url
+  }" class="weather-forecast-icon"></div>
   <div class="weather-forecast-temperature">
-     <span class="weather-forecast-temperature-max">18°  </span>
-     <span class="weather-forecast-temperature-min">12°</span>
+     <div class="weather-forecast-temperature-max">${Math.round(
+       day.temperature.maximum
+     )}°      </div>
+     <div class="weather-forecast-temperature-min">${Math.round(
+       day.temperature.minimum
+     )}°</div>
    </div>
 </div>
     `;
+    }
   });
 
   let forecast = document.querySelector("#forecast");
@@ -89,5 +112,4 @@ let searchInput = document.querySelector("#search-form");
 searchInput.addEventListener("submit", searchSumbit);
 
 searchCity("Leeuwarden");
-
-displayForecast();
+getForecast("Leeuwarden");

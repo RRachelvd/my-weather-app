@@ -116,9 +116,19 @@ main {
   margin-bottom: 5px;
 }
 
+.weather-forecast-icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
 .weather-forecast-temperature {
   font-size: 13px;
   margin-top: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .weather-forecast-temperature-min {
@@ -127,6 +137,8 @@ main {
 .weather-forecast-temperature-max {
   color: rgba(26, 21, 44, 0.6);
   font-weight: 450;
+  margin-left: 2px;
+  margin-right: 12px;
 }
 
 footer {
