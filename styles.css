@@ -11,7 +11,7 @@ a {
 
 .weather-app-container {
   background: white;
-  max-width: 640px;
+  max-width: 660px;
   margin: 60px auto;
   padding-right: 45px;
   padding-left: 45px;
@@ -99,7 +99,7 @@ h1 {
 }
 
 main {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .weather-forecast {
@@ -124,7 +124,7 @@ main {
 }
 
 .weather-forecast-temperature {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 12px;
   text-align: center;
   display: flex;
@@ -138,7 +138,7 @@ main {
   color: rgba(26, 21, 44, 0.6);
   font-weight: 450;
   margin-left: 2px;
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
 footer {
