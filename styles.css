@@ -59,7 +59,7 @@ h1 {
 }
 
 .weather-info-left {
-  margin-left: 30px;
+  margin-left: 28px;
 }
 
 .todays-weather {
@@ -79,7 +79,7 @@ h1 {
 .weather-app-temperature-container {
   display: flex;
   margin-right: 18px;
-  margin-top: 6px;
+  margin-top: 7px;
 }
 
 .weather-app-icon {
